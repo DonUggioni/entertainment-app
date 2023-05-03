@@ -1,9 +1,9 @@
 import styles from './page.module.scss';
-import HeadingLarge from './components/typography/headings/heading-L/HeadingLarge';
+import SearchBar from './components/inputs/searchBar/SearchBar';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <HeadingLarge>Hello</HeadingLarge>
+      <SearchBar />
     </main>
   );
 }
