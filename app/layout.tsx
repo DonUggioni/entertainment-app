@@ -1,4 +1,10 @@
 import './globals.scss';
+import { Outfit } from 'next/font/google';
+
+const outfit = Outfit({
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata = {
   title: 'Be Entertained',
@@ -11,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang='en' className={outfit.className}>
       <body>{children}</body>
     </html>
   );

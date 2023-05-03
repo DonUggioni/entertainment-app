@@ -1,9 +1,9 @@
 import styles from './page.module.scss';
-
+import HeadingLarge from './components/typography/headings/heading-L/HeadingLarge';
 export default function Home() {
   return (
     <main className={styles.main}>
-      <h1>Hello</h1>
+      <HeadingLarge>Hello</HeadingLarge>
     </main>
   );
 }
