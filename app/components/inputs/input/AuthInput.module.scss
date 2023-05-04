@@ -1,0 +1,44 @@
+@import '../../../sass/variables';
+
+.inputWrapper {
+  position: relative;
+  width: 400px;
+}
+
+.wrapperError {
+  &::after {
+    content: "Can't be empty";
+    position: absolute;
+    right: 1.6rem;
+    top: 1.8rem;
+    color: $red;
+    font-size: $text-m;
+  }
+}
+
+.input {
+  background-color: transparent;
+  padding: 1.6rem 1.8rem;
+  border: none;
+  border-bottom: 1px solid $blue500;
+  font-size: $text-m;
+  font-family: inherit;
+  caret-color: $red;
+  color: $white;
+  width: 100%;
+  font-weight: 300;
+
+  &::placeholder {
+    color: $white;
+    opacity: 0.5;
+  }
+
+  &:focus {
+    border-bottom: 1px solid $white;
+    outline: none;
+  }
+}
+
+.inputError {
+  border-bottom: 1px solid $red;
+}
