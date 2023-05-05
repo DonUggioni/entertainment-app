@@ -6,7 +6,7 @@ import HeadingExtraSmall from '../typography/headings/heading-XS/HeadingExtraSma
 import TextSmall from '../typography/text/text-small/TextSmall';
 import BookmarkEmpty from '../icons/BookmarkEmpty';
 import BookmarkFull from '../icons/BookmarkFull';
-import Play from '../icons/Play';
+import PlayIcon from '../icons/PlayIcon';
 
 export default function Thumbnail() {
   return (
@@ -17,12 +17,14 @@ export default function Thumbnail() {
       <div className={styles.imageContainer}>
         <Image
           className={styles.image}
-          src={imageLarge}
+          src='/assets/thumbnails/112/regular/large.jpg'
           alt='Thumbnail displaying image of movie'
+          width={280}
+          height={175}
         />
         <div className={styles.imageContainerOverlay}>
           <div>
-            <Play />
+            <PlayIcon />
             <HeadingExtraSmall>Play</HeadingExtraSmall>
           </div>
         </div>

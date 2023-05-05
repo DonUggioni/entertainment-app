@@ -1,13 +1,11 @@
 import React from 'react';
 import styles from './TrendingThumbnail.module.scss';
-import image from '../../../public/assets/thumbnails/1998/trending/large.jpg';
 import tvIcon from '../../../public/assets/icons/icon-category-tv.svg';
 import BookmarkEmpty from '../icons/BookmarkEmpty';
 import Image from 'next/image';
-import Play from '../icons/Play';
+import PlayIcon from '../icons/PlayIcon';
 
 import HeadingExtraSmall from '../typography/headings/heading-XS/HeadingExtraSmall';
-import TextSmall from '../typography/text/text-small/TextSmall';
 import HeadingSmall from '../typography/headings/heading-S/HeadingSmall';
 import TextMedium from '../typography/text/text-medium/TextMedium';
 
@@ -20,12 +18,14 @@ export default function TrendingThumbnail() {
       <div className={styles.imageContainer}>
         <Image
           className={styles.image}
-          src={image}
+          src='/assets/thumbnails/1998/trending/large.jpg'
           alt='Thumbnail displaying image of movie'
+          width={470}
+          height={230}
         />
         <div className={styles.imageContainerOverlay}>
           <div>
-            <Play />
+            <PlayIcon />
             <HeadingExtraSmall>Play</HeadingExtraSmall>
           </div>
         </div>
