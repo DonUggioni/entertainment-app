@@ -1,9 +1,10 @@
 import styles from './page.module.scss';
-import Thumbnail from './components/thumbnail/Thumbnail';
+import TrendingThumbnail from './components/trending-thumbnail/TrendingThumbnail';
+
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Thumbnail />
+      <TrendingThumbnail />
     </main>
   );
 }

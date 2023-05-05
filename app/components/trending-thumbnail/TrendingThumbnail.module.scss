@@ -7,9 +7,7 @@
 }
 
 .bookmarkIconContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include alignCenter;
   position: absolute;
   width: 3.2rem;
   height: 3.2rem;
@@ -30,8 +28,8 @@
 }
 
 .imageContainer {
-  max-width: 28rem;
-  max-height: 17.4rem;
+  max-width: 47rem;
+  max-height: 23rem;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
@@ -69,9 +67,10 @@
 
 .descriptionContainer {
   display: flex;
-  align-items: center;
-  margin-top: 8px;
-  margin-bottom: 4px;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2.4rem;
+  left: 2.4rem;
 
   & span {
     margin-left: 8px;
@@ -81,6 +80,12 @@
   & .icon {
     margin-right: 6px;
   }
+}
+
+.descriptionInnerWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
 }
 
 .categoryContainer {
