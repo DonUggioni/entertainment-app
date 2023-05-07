@@ -1,0 +1,46 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.navBar {
+  background-color: $blue600;
+  padding: 3.5rem 3.2rem;
+  display: inline-flex;
+  flex-direction: column;
+  height: 100dvh;
+  border-radius: 2rem;
+  margin: 3.2rem;
+}
+
+.logoWrapper {
+  @include alignCenter;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 7.5rem;
+
+  & a {
+    color: $blue500;
+    transition: all 0.1s ease-in-out;
+  }
+
+  & a:hover {
+    color: $red;
+  }
+}
+
+.active {
+  color: $white;
+}
+
+.avatarWrapper {
+  margin-top: auto;
+
+  & img {
+    border: 1px solid $white;
+    border-radius: 50px;
+  }
+}

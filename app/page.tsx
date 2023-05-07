@@ -1,10 +1,6 @@
 import styles from './page.module.scss';
-import SearchBar from './components/inputs/search-bar/SearchBar';
+import NavBar from './components/nav-bar/NavBar';
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <SearchBar />
-    </main>
-  );
+  return <main className={styles.main}></main>;
 }

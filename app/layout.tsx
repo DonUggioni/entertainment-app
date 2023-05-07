@@ -1,3 +1,4 @@
+import NavBar from './components/nav-bar/NavBar';
 import './globals.scss';
 import { Outfit } from 'next/font/google';
 
@@ -18,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={outfit.className}>
-      <body>{children}</body>
+      <body>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
