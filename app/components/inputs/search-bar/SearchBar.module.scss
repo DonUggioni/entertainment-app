@@ -4,11 +4,14 @@
   display: flex;
   align-items: center;
   gap: 2.4rem;
+  width: 100%;
+  padding-right: 3.5rem;
 }
 
 .inputWrapper {
   overflow: hidden;
   position: relative;
+  width: 100%;
 
   &::before {
     content: '';
@@ -30,6 +33,7 @@
 .input {
   background-color: transparent;
   border: none;
+  width: 100%;
   caret-color: $red;
   font-size: $heading-m;
   color: $white;

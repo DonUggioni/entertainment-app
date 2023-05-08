@@ -1,4 +1,4 @@
-@import './sass/mixins';
+@import '../sass/mixins';
 
 .sectionContainer {
   @include sectionContainer;
@@ -6,4 +6,8 @@
 
 .thumbnailsContainer {
   @include sectionContainer;
+}
+
+.marginBottom {
+  margin-bottom: 4rem;
 }

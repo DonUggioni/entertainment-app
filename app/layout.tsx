@@ -1,3 +1,4 @@
+import SearchBar from './components/inputs/search-bar/SearchBar';
 import NavBar from './components/nav-bar/NavBar';
 import './globals.scss';
 import { Outfit } from 'next/font/google';
@@ -21,7 +22,10 @@ export default function RootLayout({
     <html lang='en' className={outfit.className}>
       <body>
         <NavBar />
-        {children}
+        <main className={'mainWrapper'}>
+          <SearchBar />
+          {children}
+        </main>
       </body>
     </html>
   );

@@ -1,0 +1,15 @@
+import React from 'react';
+import styles from './MoviesCategory.module.scss';
+import HeadingLarge from '../components/typography/headings/heading-L/HeadingLarge';
+import Thumbnail from '../components/thumbnail/Thumbnail';
+
+export default function MoviesCategory() {
+  return (
+    <section className={styles.sectionContainer}>
+      <HeadingLarge>Movies</HeadingLarge>
+      <div className={styles.thumbnailsContainer}>
+        <Thumbnail />
+      </div>
+    </section>
+  );
+}

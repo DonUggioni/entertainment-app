@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './TrendingThumbnail.module.scss';
 import tvIcon from '../../../public/assets/icons/icon-category-tv.svg';
+import movieIcon from '../../../public/assets/icons/icon-category-movie.svg';
 import BookmarkEmpty from '../icons/BookmarkEmpty';
 import Image from 'next/image';
 import PlayIcon from '../icons/PlayIcon';

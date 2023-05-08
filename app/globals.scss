@@ -16,4 +16,11 @@ body {
   font-size: 1.6rem;
   background-color: $blue700;
   color: $white;
+  display: flex;
+  height: 100dvh;
+}
+
+.mainWrapper {
+  margin: 5.4rem 0;
+  width: 100%;
 }
