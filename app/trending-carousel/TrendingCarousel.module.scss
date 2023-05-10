@@ -1,0 +1,15 @@
+.embla {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.embla__slide {
+  margin-right: 2rem;
+  width: 100%;
+  height: 300px;
+}
