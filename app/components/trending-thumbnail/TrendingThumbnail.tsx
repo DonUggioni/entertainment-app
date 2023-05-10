@@ -9,8 +9,9 @@ import PlayIcon from '../icons/PlayIcon';
 import HeadingExtraSmall from '../typography/headings/heading-XS/HeadingExtraSmall';
 import HeadingSmall from '../typography/headings/heading-S/HeadingSmall';
 import TextMedium from '../typography/text/text-medium/TextMedium';
+import { InfoProps } from '@/utils/getData';
 
-export default function TrendingThumbnail() {
+export default function TrendingThumbnail({ movie }: { movie: InfoProps }) {
   return (
     <div className={styles.container}>
       <button className={styles.bookmarkIconContainer}>
@@ -19,7 +20,7 @@ export default function TrendingThumbnail() {
       <div className={styles.imageContainer}>
         <Image
           className={styles.image}
-          src='/assets/thumbnails/1998/trending/large.jpg'
+          src={movie.thumbnail.trending.large}
           alt='Thumbnail displaying image of movie'
           width={470}
           height={230}

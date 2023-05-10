@@ -6,10 +6,12 @@
 .embla__container {
   display: flex;
   justify-content: flex-start;
+  margin-left: 0;
 }
 
 .embla__slide {
   margin-right: 2rem;
+  margin-left: 2rem;
   width: 100%;
   height: 300px;
 }

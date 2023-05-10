@@ -1,9 +1,10 @@
 import SearchBar from './components/inputs/search-bar/SearchBar';
 import NavBar from './components/nav-bar/NavBar';
-import './globals.scss';
 import { Outfit } from 'next/font/google';
+import './globals.scss';
 
 const outfit = Outfit({
+  weight: ['300', '500'],
   subsets: ['latin'],
   display: 'swap',
 });
