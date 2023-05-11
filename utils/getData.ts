@@ -1,5 +1,4 @@
-// const URL = process.env.NEXT_PUBLIC_DATABASE_URL || '';
-const fetchURL = process.env.NEXT_PUBLIC_DATABASE_URL;
+const URL = process.env.NEXT_PUBLIC_DATABASE_URL;
 
 export type Thumbnail = {
   trending?: {
@@ -14,18 +13,18 @@ export type Thumbnail = {
 };
 
 export interface InfoProps {
-  isBookmarked: boolean;
+  title: string;
   thumbnail: Thumbnail;
   year: string;
   category: string;
-  isTrending?: boolean;
   rating: string;
-  title: string;
+  isBookmarked: boolean;
+  isTrending?: boolean;
 }
 
 export async function getData(): Promise<InfoProps[]> {
   try {
-    const res = await fetch(<any>fetchURL);
+    const res = await fetch(<any>URL);
     return res.json();
   } catch (error) {
     console.log(error);

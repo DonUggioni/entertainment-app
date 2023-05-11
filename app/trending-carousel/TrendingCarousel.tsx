@@ -5,7 +5,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import TrendingThumbnail from '../components/trending-thumbnail/TrendingThumbnail';
 import styles from './TrendingCarousel.module.scss';
-import { InfoProps, getData } from '@/utils/getData';
+import { InfoProps } from '@/utils/getData';
 
 const autoplayOptions = {
   delay: 4000,
@@ -13,19 +13,21 @@ const autoplayOptions = {
   stopOnInteraction: false,
 };
 
-export default async function TrendingCarousel() {
-  const data = getData();
+export default function TrendingCarousel({ items }: { items: InfoProps[] }) {
   const [emblaRef] = useEmblaCarousel({ align: 'start', loop: true }, [
     Autoplay(autoplayOptions),
   ]);
 
-  console.log(data);
+  const trending = items.filter((item) => item.isTrending === true);
+
   return (
     <div className={styles.embla} ref={emblaRef}>
       <div className={styles.embla__container}>
-        <div className={styles.embla__slide}>
-          {/* {data.map((item)=> <TrendingThumbnail movie={item} />)} */}
-        </div>
+        {trending.map((item, index) => (
+          <div className={styles.embla__slide} key={index}>
+            <TrendingThumbnail item={item} />
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -1,4 +1,6 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import styles from './TrendingThumbnail.module.scss';
 import tvIcon from '../../../public/assets/icons/icon-category-tv.svg';
 import movieIcon from '../../../public/assets/icons/icon-category-movie.svg';
@@ -10,17 +12,25 @@ import HeadingExtraSmall from '../typography/headings/heading-XS/HeadingExtraSma
 import HeadingSmall from '../typography/headings/heading-S/HeadingSmall';
 import TextMedium from '../typography/text/text-medium/TextMedium';
 import { InfoProps } from '@/utils/getData';
+import BookmarkFull from '../icons/BookmarkFull';
+import { useAppContext } from '@/app/store/AppContext';
 
-export default function TrendingThumbnail({ movie }: { movie: InfoProps }) {
+export default function TrendingThumbnail({ item }: { item: InfoProps }) {
+  const { screenWidth } = useAppContext();
+
   return (
     <div className={styles.container}>
       <button className={styles.bookmarkIconContainer}>
-        <BookmarkEmpty />
+        {item.isBookmarked === false ? <BookmarkEmpty /> : <BookmarkFull />}
       </button>
       <div className={styles.imageContainer}>
         <Image
           className={styles.image}
-          src={movie.thumbnail.trending.large}
+          src={
+            screenWidth <= 768
+              ? item.thumbnail.trending?.small!
+              : item.thumbnail.trending?.large!
+          }
           alt='Thumbnail displaying image of movie'
           width={470}
           height={230}
@@ -34,20 +44,20 @@ export default function TrendingThumbnail({ movie }: { movie: InfoProps }) {
       </div>
       <div className={styles.descriptionContainer}>
         <div className={styles.descriptionInnerWrapper}>
-          <TextMedium>2019</TextMedium>
+          <TextMedium>{item.year}</TextMedium>
           <span>&#8226;</span>
           <div className={styles.categoryContainer}>
             <Image
               className={styles.icon}
-              src={tvIcon}
+              src={item.category === 'TV Series' ? tvIcon : movieIcon}
               alt='Icon displaying category'
             />
-            <TextMedium>Movie</TextMedium>
+            <TextMedium>{item.category}</TextMedium>
             <span>&#8226;</span>
           </div>
-          <TextMedium>PG</TextMedium>
+          <TextMedium>{item.rating}</TextMedium>
         </div>
-        <HeadingSmall>The Great Lands</HeadingSmall>
+        <HeadingSmall>{item.title}</HeadingSmall>
       </div>
     </div>
   );
