@@ -3,9 +3,19 @@
 import { getData } from '@/utils/getData';
 import { createContext, useContext, useEffect, useState } from 'react';
 
+const initialState = {
+  title: '',
+  thumbnail: {},
+  year: '',
+  category: '',
+  rating: '',
+  isBookmarked: true || false,
+  isTrending: true || false,
+  screenWidth: 0,
+};
+
 const AppContext = createContext({
   screenWidth: 0,
-  moviesData: {},
 });
 
 export type Thumbnail = {
@@ -32,36 +42,9 @@ export interface InfoProps {
 
 export function AppContextProvider({ children }: { children: any }) {
   const [screenWidth, setScreenWidth] = useState(0);
-  const [moviesData, setMoviesData] = useState({});
-
-  console.log(moviesData);
-
-  async function getMoviesData() {
-    const moviesArr: InfoProps[] = [];
-    try {
-      const data = await getData();
-      if (data) {
-        data.map((item) => moviesArr.push(item));
-      }
-      setMoviesData(moviesArr);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-  function getWindowWidth() {
-    const width = window.innerWidth;
-    setScreenWidth(width);
-  }
-
-  useEffect(() => {
-    getMoviesData();
-    getWindowWidth();
-  }, []);
-
   const values = {
     screenWidth,
-    moviesData,
+    // moviesData,
   };
 
   return <AppContext.Provider value={values}>{children}</AppContext.Provider>;

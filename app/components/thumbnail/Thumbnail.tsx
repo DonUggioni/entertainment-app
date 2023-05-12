@@ -1,20 +1,16 @@
-'use client';
-
 import styles from './Thumbnail.module.scss';
 import Image from 'next/image';
-import imageLarge from '../../../public/assets/thumbnails/112/regular/large.jpg';
 import tvIcon from '../../../public/assets/icons/icon-category-tv.svg';
 import movieIcon from '../../../public/assets/icons/icon-category-movie.svg';
 import HeadingExtraSmall from '../typography/headings/heading-XS/HeadingExtraSmall';
 import TextSmall from '../typography/text/text-small/TextSmall';
-import BookmarkEmpty from '../icons/BookmarkEmpty';
-import BookmarkFull from '../icons/BookmarkFull';
 import PlayIcon from '../icons/PlayIcon';
 import { InfoProps } from '@/utils/getData';
-import { useAppContext } from '@/app/store/AppContext';
+import BookmarkButton from '../bookmark-button/BookmarkButton';
+import { getWindowWidth } from '@/utils/getWindowWidth';
 
 export default function Thumbnail({ items }: { items: InfoProps }) {
-  const { screenWidth } = useAppContext();
+  const screenWidth = getWindowWidth();
 
   function renderImage() {
     if (screenWidth >= 1024) {
@@ -30,16 +26,14 @@ export default function Thumbnail({ items }: { items: InfoProps }) {
 
   return (
     <div className={styles.container}>
-      <button className={styles.bookmarkIconContainer}>
-        <BookmarkEmpty />
-      </button>
+      <BookmarkButton items={items} />
       <div className={styles.imageContainer}>
         <Image
           className={styles.image}
           src={renderImage()}
           alt='Thumbnail displaying image of movie'
           width={280}
-          height={175}
+          height={174}
         />
         <div className={styles.imageContainerOverlay}>
           <div>

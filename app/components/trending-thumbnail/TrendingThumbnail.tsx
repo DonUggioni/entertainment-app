@@ -12,17 +12,15 @@ import HeadingExtraSmall from '../typography/headings/heading-XS/HeadingExtraSma
 import HeadingSmall from '../typography/headings/heading-S/HeadingSmall';
 import TextMedium from '../typography/text/text-medium/TextMedium';
 import { InfoProps } from '@/utils/getData';
-import BookmarkFull from '../icons/BookmarkFull';
-import { useAppContext } from '@/app/store/AppContext';
+import BookmarkButton from '../bookmark-button/BookmarkButton';
+import { getWindowWidth } from '@/utils/getWindowWidth';
 
 export default function TrendingThumbnail({ item }: { item: InfoProps }) {
-  const { screenWidth } = useAppContext();
+  const screenWidth = getWindowWidth();
 
   return (
     <div className={styles.container}>
-      <button className={styles.bookmarkIconContainer}>
-        {item.isBookmarked === false ? <BookmarkEmpty /> : <BookmarkFull />}
-      </button>
+      <BookmarkButton items={item} />
       <div className={styles.imageContainer}>
         <Image
           className={styles.image}

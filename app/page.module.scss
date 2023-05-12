@@ -5,8 +5,5 @@
 }
 
 .thumbnailsContainer {
-  @include sectionContainer;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4rem;
+  @include thumbnailsContainer;
 }

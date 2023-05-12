@@ -13,3 +13,10 @@
 @mixin sectionContainer {
   margin-top: 3.4rem;
 }
+
+@mixin thumbnailsContainer {
+  @include sectionContainer;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}

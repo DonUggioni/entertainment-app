@@ -6,40 +6,12 @@
   display: inline-block;
 }
 
-.bookmarkIconContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 3.2rem;
-  height: 3.2rem;
-  border-radius: 100px;
-  background: rgba($blue700, 0.5);
-  top: 1.6rem;
-  right: 1.6rem;
-  color: $white;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  border: none;
-  z-index: 10;
-
-  &:hover {
-    background: $white;
-    color: $blue700;
-  }
-}
-
 .imageContainer {
   max-width: 28rem;
-  max-height: 17.4rem;
+  max-height: 17.5rem;
   border-radius: 8px;
   overflow: hidden;
   position: relative;
-}
-
-.image {
-  width: auto;
-  height: auto;
 }
 
 .imageContainerOverlay {

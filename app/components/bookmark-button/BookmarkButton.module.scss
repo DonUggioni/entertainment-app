@@ -1,0 +1,24 @@
+@import '../../sass/variables';
+
+.bookmarkIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 100px;
+  background: rgba($blue700, 0.5);
+  top: 1.6rem;
+  right: 1.6rem;
+  color: $white;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: none;
+  z-index: 20;
+
+  &:hover {
+    background: $white;
+    color: $blue700;
+  }
+}
