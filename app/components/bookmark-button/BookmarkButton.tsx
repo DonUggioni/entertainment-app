@@ -9,9 +9,15 @@ interface Types {
   isBookmarked: boolean;
 }
 
-export default function BookmarkButton({ items }: { items: Types }) {
+export default function BookmarkButton({
+  items,
+  onClick,
+}: {
+  items: Types;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
+}) {
   return (
-    <button className={styles.bookmarkIconContainer}>
+    <button className={styles.bookmarkIconContainer} onClick={onClick}>
       {items.isBookmarked === false ? <BookmarkEmpty /> : <BookmarkFull />}
     </button>
   );

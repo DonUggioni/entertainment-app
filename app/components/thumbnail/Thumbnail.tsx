@@ -9,7 +9,13 @@ import { InfoProps } from '@/utils/getData';
 import BookmarkButton from '../bookmark-button/BookmarkButton';
 import { getWindowWidth } from '@/utils/getWindowWidth';
 
-export default function Thumbnail({ items }: { items: InfoProps }) {
+export default function Thumbnail({
+  items,
+  onClick,
+}: {
+  items: InfoProps;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
+}) {
   const screenWidth = getWindowWidth();
 
   function renderImage() {
@@ -26,7 +32,7 @@ export default function Thumbnail({ items }: { items: InfoProps }) {
 
   return (
     <div className={styles.container}>
-      <BookmarkButton items={items} />
+      <BookmarkButton onClick={onClick} items={items} />
       <div className={styles.imageContainer}>
         <Image
           className={styles.image}

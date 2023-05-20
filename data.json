@@ -12,7 +12,7 @@
         "large": "/assets/thumbnails/beyond-earth/regular/large.jpg"
       }
     },
-    "year": 2019,
+    "year": "2019",
     "category": "Movie",
     "rating": "PG",
     "isBookmarked": false,
@@ -31,7 +31,7 @@
         "large": "/assets/thumbnails/bottom-gear/regular/large.jpg"
       }
     },
-    "year": 2021,
+    "year": "2021",
     "category": "Movie",
     "rating": "PG",
     "isBookmarked": false,
@@ -50,7 +50,7 @@
         "large": "/assets/thumbnails/undiscovered-cities/regular/large.jpg"
       }
     },
-    "year": 2019,
+    "year": "2019",
     "category": "TV Series",
     "rating": "E",
     "isBookmarked": false,
@@ -69,7 +69,7 @@
         "large": "/assets/thumbnails/1998/regular/large.jpg"
       }
     },
-    "year": 2021,
+    "year": "2021",
     "category": "Movie",
     "rating": "18+",
     "isBookmarked": false,
@@ -88,7 +88,7 @@
         "large": "/assets/thumbnails/dark-side-of-the-moon/regular/large.jpg"
       }
     },
-    "year": 2018,
+    "year": "2018",
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": true,
@@ -103,7 +103,7 @@
         "large": "/assets/thumbnails/the-great-lands/regular/large.jpg"
       }
     },
-    "year": 2019,
+    "year": "2019",
     "category": "Movie",
     "rating": "E",
     "isBookmarked": false,
@@ -118,7 +118,7 @@
         "large": "/assets/thumbnails/the-diary/regular/large.jpg"
       }
     },
-    "year": 2019,
+    "year": "2019",
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
@@ -133,7 +133,7 @@
         "large": "/assets/thumbnails/earths-untouched/regular/large.jpg"
       }
     },
-    "year": 2017,
+    "year": "2017",
     "category": "Movie",
     "rating": "18+",
     "isBookmarked": true,
@@ -148,7 +148,7 @@
         "large": "/assets/thumbnails/no-land-beyond/regular/large.jpg"
       }
     },
-    "year": 2019,
+    "year": "2019",
     "category": "Movie",
     "rating": "E",
     "isBookmarked": false,
@@ -163,7 +163,7 @@
         "large": "/assets/thumbnails/during-the-hunt/regular/large.jpg"
       }
     },
-    "year": 2016,
+    "year": "2016",
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
@@ -178,7 +178,7 @@
         "large": "/assets/thumbnails/autosport-the-series/regular/large.jpg"
       }
     },
-    "year": 2016,
+    "year": "2016",
     "category": "TV Series",
     "rating": "18+",
     "isBookmarked": false,
@@ -193,7 +193,7 @@
         "large": "/assets/thumbnails/same-answer-2/regular/large.jpg"
       }
     },
-    "year": 2017,
+    "year": "2017",
     "category": "Movie",
     "rating": "E",
     "isBookmarked": false,
@@ -208,7 +208,7 @@
         "large": "/assets/thumbnails/below-echo/regular/large.jpg"
       }
     },
-    "year": 2016,
+    "year": "2016",
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
@@ -223,7 +223,7 @@
         "large": "/assets/thumbnails/the-rockies/regular/large.jpg"
       }
     },
-    "year": 2015,
+    "year": "2015",
     "category": "TV Series",
     "rating": "E",
     "isBookmarked": true,
@@ -238,7 +238,7 @@
         "large": "/assets/thumbnails/relentless/regular/large.jpg"
       }
     },
-    "year": 2017,
+    "year": "2017",
     "category": "Movie",
     "rating": "PG",
     "isBookmarked": true,
@@ -253,7 +253,7 @@
         "large": "/assets/thumbnails/community-of-ours/regular/large.jpg"
       }
     },
-    "year": 2018,
+    "year": "2018",
     "category": "TV Series",
     "rating": "18+",
     "isBookmarked": false,
@@ -268,7 +268,7 @@
         "large": "/assets/thumbnails/van-life/regular/large.jpg"
       }
     },
-    "year": 2015,
+    "year": "2015",
     "category": "Movie",
     "rating": "PG",
     "isBookmarked": false,
@@ -283,7 +283,7 @@
         "large": "/assets/thumbnails/the-heiress/regular/large.jpg"
       }
     },
-    "year": 2021,
+    "year": "2021",
     "category": "Movie",
     "rating": "PG",
     "isBookmarked": true,
@@ -298,7 +298,7 @@
         "large": "/assets/thumbnails/off-the-track/regular/large.jpg"
       }
     },
-    "year": 2017,
+    "year": "2017",
     "category": "Movie",
     "rating": "18+",
     "isBookmarked": true,
@@ -313,7 +313,7 @@
         "large": "/assets/thumbnails/whispering-hill/regular/large.jpg"
       }
     },
-    "year": 2017,
+    "year": "2017",
     "category": "Movie",
     "rating": "E",
     "isBookmarked": false,
@@ -328,7 +328,7 @@
         "large": "/assets/thumbnails/112/regular/large.jpg"
       }
     },
-    "year": 2013,
+    "year": "2013",
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
@@ -343,7 +343,7 @@
         "large": "/assets/thumbnails/lone-heart/regular/large.jpg"
       }
     },
-    "year": 2017,
+    "year": "2017",
     "category": "Movie",
     "rating": "E",
     "isBookmarked": true,
@@ -358,7 +358,7 @@
         "large": "/assets/thumbnails/production-line/regular/large.jpg"
       }
     },
-    "year": 2018,
+    "year": "2018",
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
@@ -373,7 +373,7 @@
         "large": "/assets/thumbnails/dogs/regular/large.jpg"
       }
     },
-    "year": 2016,
+    "year": "2016",
     "category": "TV Series",
     "rating": "E",
     "isBookmarked": true,
@@ -388,7 +388,7 @@
         "large": "/assets/thumbnails/asia-in-24-days/regular/large.jpg"
       }
     },
-    "year": 2020,
+    "year": "2020",
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
@@ -403,7 +403,7 @@
         "large": "/assets/thumbnails/the-tasty-tour/regular/large.jpg"
       }
     },
-    "year": 2016,
+    "year": "2016",
     "category": "TV Series",
     "rating": "PG",
     "isBookmarked": false,
@@ -418,7 +418,7 @@
         "large": "/assets/thumbnails/darker/regular/large.jpg"
       }
     },
-    "year": 2017,
+    "year": "2017",
     "category": "Movie",
     "rating": "18+",
     "isBookmarked": true,
@@ -433,7 +433,7 @@
         "large": "/assets/thumbnails/unresolved-cases/regular/large.jpg"
       }
     },
-    "year": 2018,
+    "year": "2018",
     "category": "TV Series",
     "rating": "18+",
     "isBookmarked": false,
@@ -448,7 +448,7 @@
         "large": "/assets/thumbnails/mission-saturn/regular/large.jpg"
       }
     },
-    "year": 2017,
+    "year": "2017",
     "category": "Movie",
     "rating": "PG",
     "isBookmarked": true,

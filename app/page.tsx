@@ -1,8 +1,8 @@
 import { getData } from '@/utils/getData';
-import Thumbnail from './components/thumbnail/Thumbnail';
 import HeadingLarge from './components/typography/headings/heading-L/HeadingLarge';
 import styles from './page.module.scss';
 import TrendingCarousel from './trending-carousel/TrendingCarousel';
+import HomeThumbnailsContainer from './components/homeThumbnailsContainer/HomeThumbnailsContainer';
 
 export default async function Home() {
   const items = await getData();
@@ -17,11 +17,7 @@ export default async function Home() {
       </section>
       <section className={styles.sectionContainer}>
         <HeadingLarge>Recommended for you</HeadingLarge>
-        <div className={styles.thumbnailsContainer}>
-          {items.map((item, index) => (
-            <Thumbnail items={item} key={index} />
-          ))}
-        </div>
+        <HomeThumbnailsContainer />
       </section>
     </main>
   );

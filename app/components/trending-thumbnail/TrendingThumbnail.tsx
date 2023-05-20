@@ -1,10 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './TrendingThumbnail.module.scss';
 import tvIcon from '../../../public/assets/icons/icon-category-tv.svg';
 import movieIcon from '../../../public/assets/icons/icon-category-movie.svg';
-import BookmarkEmpty from '../icons/BookmarkEmpty';
 import Image from 'next/image';
 import PlayIcon from '../icons/PlayIcon';
 
@@ -15,12 +14,18 @@ import { InfoProps } from '@/utils/getData';
 import BookmarkButton from '../bookmark-button/BookmarkButton';
 import { getWindowWidth } from '@/utils/getWindowWidth';
 
-export default function TrendingThumbnail({ item }: { item: InfoProps }) {
+export default function TrendingThumbnail({
+  item,
+  onClick,
+}: {
+  item: InfoProps;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
+}) {
   const screenWidth = getWindowWidth();
 
   return (
     <div className={styles.container}>
-      <BookmarkButton items={item} />
+      <BookmarkButton onClick={onClick} items={item} />
       <div className={styles.imageContainer}>
         <Image
           className={styles.image}

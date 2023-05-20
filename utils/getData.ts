@@ -15,7 +15,7 @@ export type Thumbnail = {
 export interface InfoProps {
   title: string;
   thumbnail: Thumbnail;
-  year: string;
+  year: string | number;
   category: string;
   rating: string;
   isBookmarked: boolean;
