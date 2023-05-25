@@ -1,7 +1,9 @@
 'use client';
+import { useAppContext } from '@/app/store/AppContext';
 import SearchIcon from '../../icons/SearchIcon';
 import styles from './SearchBar.module.scss';
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 function setPlaceHolder() {
   const pathname = usePathname();
@@ -22,6 +24,22 @@ function setPlaceHolder() {
 }
 
 export default function SearchBar() {
+  const { moviesData, setMoviesData, searchParams, setSearchParams } =
+    useAppContext();
+  const [initialData, setInitialData] = useState(moviesData);
+
+  useEffect(() => {
+    if (searchParams.length === 0) {
+      setMoviesData(initialData);
+    }
+
+    if (searchParams.length > 0) {
+      setMoviesData(
+        moviesData.filter((item) => item.title.includes(searchParams))
+      );
+    }
+  }, [searchParams]);
+
   return (
     <div className={`${styles.inputContainer}`}>
       <SearchIcon />
@@ -30,6 +48,7 @@ export default function SearchBar() {
           className={styles.input}
           type='text'
           placeholder={setPlaceHolder()}
+          onChange={(e) => setSearchParams(e.target.value)}
         />
       </form>
     </div>

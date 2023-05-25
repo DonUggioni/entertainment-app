@@ -6,9 +6,13 @@ import data from '../../data.json';
 const AppContext = createContext<{
   moviesData: InfoProps[];
   setMoviesData: React.Dispatch<React.SetStateAction<InfoProps[]>>;
+  searchParams: string;
+  setSearchParams: React.Dispatch<React.SetStateAction<string>>;
 }>({
   moviesData: [],
   setMoviesData: () => {},
+  searchParams: '',
+  setSearchParams: () => '',
 });
 
 export interface InfoProps {
@@ -37,12 +41,13 @@ export function AppContextProvider({
   children: React.ReactNode;
 }) {
   const [moviesData, setMoviesData] = useState<InfoProps[]>(data);
-
-  console.log(moviesData);
+  const [searchParams, setSearchParams] = useState('');
 
   const values = {
     moviesData,
     setMoviesData,
+    searchParams,
+    setSearchParams,
   };
 
   return <AppContext.Provider value={values}>{children}</AppContext.Provider>;

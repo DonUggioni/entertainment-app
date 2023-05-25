@@ -26,8 +26,8 @@ export default function NavBar() {
         <Logo />
       </div>
       <ul className={`${styles.list}`}>
-        <li className={pathname !== '/' ? '' : styles.active}>
-          <Link href={'/'}>
+        <li className={isActive('home')}>
+          <Link href={'/home'}>
             <HomeNavIcon />
           </Link>
         </li>

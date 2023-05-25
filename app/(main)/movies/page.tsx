@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './MoviesCategory.module.scss';
-import HeadingLarge from '../components/typography/headings/heading-L/HeadingLarge';
-import MoviesThumbnailsContainer from '../components/moviesThumbnailsContainer/MoviesThumbnailsContainer';
+import HeadingLarge from '../../components/typography/headings/heading-L/HeadingLarge';
+import MoviesThumbnailsContainer from '../../components/moviesThumbnailsContainer/MoviesThumbnailsContainer';
 
 export default async function MoviesCategory() {
   return (

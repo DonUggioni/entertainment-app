@@ -23,13 +23,7 @@ export default function RootLayout({
   return (
     <html lang='en' className={outfit.className}>
       <body>
-        <NavBar />
-        <main className={'mainWrapper'}>
-          <AppContextProvider>
-            <SearchBar />
-            {children}
-          </AppContextProvider>
-        </main>
+        <AppContextProvider>{children}</AppContextProvider>
       </body>
     </html>
   );
