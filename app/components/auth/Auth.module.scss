@@ -1,0 +1,51 @@
+@import '../../sass/variables';
+
+.container {
+  display: grid;
+
+  & img {
+    place-self: center;
+  }
+}
+
+.innerWrapper {
+  width: 95vw;
+  max-width: 40rem;
+  padding: 3.2rem;
+  background-color: $blue600;
+  border-radius: 2rem;
+  margin-top: 8.3rem;
+}
+
+.inputsWrapper {
+  display: grid;
+  gap: 1.6rem;
+  margin: 4rem 0;
+}
+
+.buttonWrapper {
+  display: grid;
+  gap: 2.4rem;
+}
+
+.optionTextWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  & button {
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    color: $red;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    font-size: inherit;
+  }
+
+  & button:hover {
+    color: $white;
+  }
+}

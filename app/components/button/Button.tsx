@@ -1,5 +1,14 @@
 import styles from './Button.module.scss';
 
-export default function Button() {
-  return <button className={styles.button}>Login to your account</button>;
+interface Props {
+  children: React.ReactNode;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
+}
+
+export default function Button({ children, onClick }: Props) {
+  return (
+    <button className={styles.button} onClick={onClick}>
+      {children}
+    </button>
+  );
 }

@@ -2,13 +2,24 @@
 
 import styles from './AuthInput.module.scss';
 
-export default function AuthInput() {
+interface InputProps {
+  placeholder: string;
+  autofocus?: boolean;
+  type: string;
+}
+
+export default function AuthInput({
+  placeholder,
+  autofocus,
+  type,
+}: InputProps) {
   return (
     <div className={`${styles.inputWrapper}`}>
       <input
-        type='text'
-        placeholder='Email address'
+        type={type}
+        placeholder={placeholder}
         className={`${styles.input}`}
+        autoFocus={autofocus}
       />
     </div>
   );
