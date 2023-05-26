@@ -1,5 +1,3 @@
-import SearchBar from './components/inputs/search-bar/SearchBar';
-import NavBar from './components/nav-bar/NavBar';
 import { Outfit } from 'next/font/google';
 import './globals.scss';
 import { AppContextProvider } from './store/AppContext';
@@ -8,6 +6,7 @@ const outfit = Outfit({
   weight: ['300', '500'],
   subsets: ['latin'],
   display: 'swap',
+  preload: true,
 });
 
 export const metadata = {

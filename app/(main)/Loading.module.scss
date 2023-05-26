@@ -1,0 +1,13 @@
+@import '../sass/variables';
+@import '../sass/mixins';
+
+.container {
+  @include thumbnailsContainer;
+}
+
+.thumbnail {
+  width: 28rem;
+  height: 17.4rem;
+  background-color: rgba($blue500, 8);
+  border-radius: 8px;
+}

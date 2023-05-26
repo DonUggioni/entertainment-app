@@ -1,10 +1,21 @@
+@import '../sass/mixins';
+
 .container {
   display: flex;
   width: 100%;
+  overflow-x: hidden;
+
+  @include sm-breakpoint {
+    flex-direction: column;
+  }
 }
 
 .mainWrapper {
   margin: 5.4rem 0 0;
   width: 100%;
   overflow-x: hidden;
+
+  @include sm-breakpoint {
+    margin: 3.4rem 2.4rem 0;
+  }
 }

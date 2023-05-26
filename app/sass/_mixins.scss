@@ -6,13 +6,10 @@
   justify-content: center;
 }
 
-@mixin thumbnailsContainer {
-  margin-top: 2.5rem;
-}
-
 @mixin sectionContainer {
   margin-top: 3.4rem;
   margin-bottom: 3.4rem;
+  margin-right: 1rem;
 }
 
 @mixin thumbnailsContainer {
@@ -20,4 +17,38 @@
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
+
+  @include sm-breakpoint {
+    gap: 3rem;
+  }
+}
+
+@mixin xs-breakpoint {
+  @media only screen and (max-width: $xsBreakpoint) {
+    @content;
+  }
+}
+
+@mixin sm-breakpoint {
+  @media only screen and (max-width: $smBreakpoint) {
+    @content;
+  }
+}
+
+@mixin md-breakpoint {
+  @media only screen and (min-width: $mdBreakpoint) {
+    @content;
+  }
+}
+
+@mixin lg-breakpoint {
+  @media only screen and (min-width: $lgBreakpoint) {
+    @content;
+  }
+}
+
+@mixin xl-breakpoint {
+  @media only screen and (min-width: $xlBreakpoint) {
+    @content;
+  }
 }

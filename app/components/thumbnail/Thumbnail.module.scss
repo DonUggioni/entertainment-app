@@ -12,6 +12,11 @@
   border-radius: 8px;
   overflow: hidden;
   position: relative;
+
+  @include sm-breakpoint {
+    max-width: 22rem;
+    max-height: 14rem;
+  }
 }
 
 .imageContainerOverlay {

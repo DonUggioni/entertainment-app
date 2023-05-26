@@ -6,6 +6,11 @@
   gap: 2.4rem;
   width: 100%;
   padding-right: 3.5rem;
+  position: sticky;
+  top: 0;
+  background-color: $blue700;
+  z-index: 300;
+  padding-bottom: 2rem;
 }
 
 .inputWrapper {

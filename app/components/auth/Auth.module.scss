@@ -1,4 +1,5 @@
 @import '../../sass/variables';
+@import '../../sass/mixins';
 
 .container {
   display: grid;
@@ -9,12 +10,16 @@
 }
 
 .innerWrapper {
-  width: 95vw;
+  width: 90vw;
   max-width: 40rem;
   padding: 3.2rem;
   background-color: $blue600;
   border-radius: 2rem;
   margin-top: 8.3rem;
+
+  @include xs-breakpoint {
+    padding: 2.4rem;
+  }
 }
 
 .inputsWrapper {
