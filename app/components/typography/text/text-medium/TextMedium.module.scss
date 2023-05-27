@@ -1,6 +1,11 @@
 @import '../../../../sass/variables';
+@import '../../../../sass/mixins';
 
 .text {
   font-size: $text-m;
   font-weight: 300;
+
+  @include xs-breakpoint {
+    font-size: 1.2rem;
+  }
 }

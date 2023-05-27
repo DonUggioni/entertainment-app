@@ -1,3 +1,5 @@
+@import '../sass/mixins';
+
 .embla {
   overflow-x: hidden;
   width: 100%;
@@ -10,8 +12,12 @@
 }
 
 .embla__slide {
-  margin-right: 2rem;
-  margin-left: 2rem;
+  margin: 0 2rem;
   width: 100%;
   height: 300px;
+
+  @include xs-breakpoint {
+    height: 140px;
+    margin: 0 0.8rem;
+  }
 }

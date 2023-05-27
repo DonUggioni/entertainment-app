@@ -12,6 +12,11 @@
   border-radius: 8px;
   overflow: hidden;
   position: relative;
+
+  @include xs-breakpoint {
+    width: 24rem;
+    height: 14rem;
+  }
 }
 
 .image {
@@ -51,6 +56,11 @@
   position: absolute;
   bottom: 2.4rem;
   left: 2.4rem;
+
+  @include xs-breakpoint {
+    bottom: 1.6rem;
+    left: 1.6rem;
+  }
 
   & span {
     margin-left: 8px;

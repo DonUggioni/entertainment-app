@@ -1,6 +1,11 @@
 @import '../../../../sass/variables';
+@import '../../../../sass/mixins';
 
 .headingExtraSmall {
   font-weight: 500;
   font-size: $heading-xs;
+
+  @include xs-breakpoint {
+    font-size: 1.4rem;
+  }
 }

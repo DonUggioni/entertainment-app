@@ -10,6 +10,11 @@
   margin-top: 3.4rem;
   margin-bottom: 3.4rem;
   margin-right: 1rem;
+
+  @include xs-breakpoint {
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
 }
 
 @mixin thumbnailsContainer {
@@ -20,6 +25,10 @@
 
   @include sm-breakpoint {
     gap: 3rem;
+  }
+
+  @include xs-breakpoint {
+    gap: 1.5rem;
   }
 }
 

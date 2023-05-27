@@ -8,6 +8,16 @@
 .thumbnail {
   width: 28rem;
   height: 17.4rem;
-  background-color: rgba($blue500, 8);
+  background-color: rgba($blue500, 6);
   border-radius: 8px;
+
+  @include sm-breakpoint {
+    width: 22rem;
+    height: 14rem;
+  }
+
+  @include xs-breakpoint {
+    width: 16.4rem;
+    height: 11rem;
+  }
 }
